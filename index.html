@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            border: thick solid blue;
+            min-height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            perspective: 1000px;
+        }
+        .item{
+            border: thick solid green;
+            height: 30vh;
+            background-color: green;
+            width: 20%;
+            margin: 10px;
+        }
+        .item:nth-of-type(2){
+            background-color: red;
+            border: none;
+            /* transform: translateY(50px) translateX(50px); */
+            /* transform: rotateY(100deg) rotateX(100deg); */
+            /* transform: skewY(40deg); */
+            transform: scale(1, 2);
+
+        }
+    </style>
+</head>
+<body>
+    <!-- Css transform -->
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>

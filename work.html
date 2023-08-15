@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            border: thick solid blue;
+            height: 80vh;
+            display: grid;
+            grid-template-columns: 3fr 3fr;
+            justify-content: center;
+            align-items: center;
+            perspective: 1000px;
+        }
+        .grid-item{
+            border: thick solid green;
+            height: 30vh;
+            width: 60%;
+            margin: auto;
+        }
+        .grid-item:nth-of-type(1):hover{
+            transform: rotate(40deg);
+            transition: 10s;
+        }
+        .grid-item:nth-of-type(2):hover{
+            transform: scale(110%);
+            transition: 29s;
+        }
+        .grid-item:nth-of-type(3):hover{
+            transform: skewX(50deg);
+            transition: 20s;
+        }
+        .grid-item:nth-of-type(4):hover{
+            transform: translate(100px);
+            transition: 5%;
+        }
+        .grid-item:nth-of-type(1){
+            background-color: yellow;
+        }
+        .grid-item:nth-of-type(2){
+            background-color: blue;
+        }
+        .grid-item:nth-of-type(3){
+            background-color: aqua;
+        }
+        .grid-item:nth-of-type(4){
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+    </div>
+</body>
+</html>
